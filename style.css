@@ -1,0 +1,55 @@
+body {
+    border: 0.5px grey solid;
+    width: 95%;
+    margin: 10px auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form * {
+    margin: 10px auto;
+    width: 500px;
+    text-align: center;
+}
+
+textarea {
+    height: 50px;
+}
+
+select {
+    width: 200px;
+    text-align: center;
+}
+
+h2 {
+    margin: 10px auto;
+    text-align: center;
+}
+
+
+#result {
+    width: 500px;
+    min-height: 60px;
+    margin: 10px auto;
+    padding: 5px;
+    text-align: center;
+    background-color: aqua;
+    border: 0.5px solid gold;
+}
+
+button {
+    box-shadow: 4px 3px grey;
+    border-radius: 20%;
+    color: rgb(232, 47, 5);
+    font-weight: 400;
+}
+
+button:active {
+    box-shadow: 6px 1px rgb(75, 75, 75);
+    border-radius: 30% 30% 10% 10%;
+    color: rgb(218, 9, 44);
+    font-weight: 600;
+}

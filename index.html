@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <h2>Шифрование/расшифровка сообщения</h2>
+        <form action="" method="get">
+            <label for="code_algorithm">Алгоритм шифрования/расшифровки</label>
+            <select name="code_algorithm" id="code_algorithm">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+            </select>
+            <label for="encode_input">Введите сообщение для шифрования</label>
+            <textarea type="text" id="encode_input" name="encode_input" placeholder="Простой текст..."></textarea>
+            <button type="button" id="encode-btn">Зашифровать сообщение</button>
+        </form>
+        <form id="my_form" action="" method="get">
+            <label for="decode_input">Введите сообщение для расшифровки</label>
+            <textarea v-model="input_data" type="text" id="decode_input" name="decode_input"
+                placeholder="Зашифрованный текст..."></textarea>
+            <button v-on:click="decodeMessage" type="button" id="decode-btn">Раcшифровать сообщение</button>
+        </form>
+        <h2>Результат</h2>
+        <h4 id="result">{{message}}</h4>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>
